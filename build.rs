@@ -579,6 +579,7 @@ fn main() {
                 "cargo:include={}",
                 install_dir.join("include").to_str().unwrap()
             );
+            println!("cargo:lib={}", lib_dir.to_str().unwrap());
         }
         "x86_64-pc-windows-msvc" => {
             let install_dir = get_cargo_install_dir();
@@ -593,6 +594,7 @@ fn main() {
                 "cargo:include={}",
                 install_dir.join("include").to_str().unwrap()
             );
+            println!("cargo:lib={}", lib_dir.to_str().unwrap());
         }
         "i686-pc-windows-gnu" => {
             let install_dir = get_cargo_install_dir();
@@ -607,6 +609,7 @@ fn main() {
                 "cargo:include={}",
                 install_dir.join("include").to_str().unwrap()
             );
+            println!("cargo:lib={}", lib_dir.to_str().unwrap());
         }
         "x86_64-pc-windows-gnu" => {
             let install_dir = get_cargo_install_dir();
@@ -621,6 +624,7 @@ fn main() {
                 "cargo:include={}",
                 install_dir.join("include").to_str().unwrap()
             );
+            println!("cargo:lib={}", lib_dir.to_str().unwrap());
         }
         _ => {
             panic!(
